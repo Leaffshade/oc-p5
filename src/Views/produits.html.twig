@@ -35,7 +35,7 @@
 
 
     </div>
-    <div>
+    <div class="page">
         {% for i in range(1, nbPages) %}
             {% if i == page %}
     	        {{i}}
@@ -44,5 +44,5 @@
             {% endif %}
             
         {% endfor %}
-        </div>
+    </div>
 {% endblock %}

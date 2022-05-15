@@ -8,6 +8,11 @@ function cartTotalCalculate(){
     return total;
 }
 
+function changeCartEvt(){
+    const changeCartEvent = new CustomEvent('changeCart')
+    window.dispatchEvent(changeCartEvent)
+}
+
 const formAddToCart = document.querySelector('#addToCart');
 
 
@@ -33,6 +38,8 @@ if(formAddToCart){
 
         localStorage.setItem('cart', JSON.stringify(cart))
         alert('Votre produit a bien été ajouté au panier');
+        changeCartEvt()
+        
     })
 }
 

@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/public/assets/css/style.css" />
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <script src="https://kit.fontawesome.com/7ee053dcb6.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
         {% block head %}
             <title>{% block title %}{% endblock %} - Pixy</title>
         {% endblock %}
@@ -22,7 +23,10 @@
                     <a class="link" href="/">Accueil</a>
                     <a class="link" href="/products">Produits</a>
                     <a class="link" href="/contact">Contact</a>
-                    <a class="link" href="/cart">Panier <i class="fas fa-shopping-basket"></i></a>
+                    <a class="link" href="/cart">Panier <i class="fas fa-shopping-basket"></i>
+                        <span id="nb-products"></span>
+                    
+                    </a>
                 </nav>
             </div>
             
@@ -37,5 +41,7 @@
             </nav>
     
         </footer>
+
+        <script src="/public/assets/js/common.js" type="application/javascript"></script>
     </body>
 </html>

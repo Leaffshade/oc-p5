@@ -32,7 +32,7 @@
           <div>
                 <label>Image</label>
                 <input name="image"  type="file" />
-
+                <input type="hidden" name="old_image" value="{{ product.image }}">
                 <img src="/public/{{product.image}}" />
           </div>
 
@@ -40,6 +40,14 @@
           <button type="submit">Modifier le produit</button>
         
         </form>
+
+         <script type="text/javascript">
+            tinymce.init({
+                selector: 'textarea',
+                plugins: 'lists',
+                toolbar: 'numlist bullist'
+            });
+        </script>
        
     
 {% endblock %}

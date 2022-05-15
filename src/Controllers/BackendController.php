@@ -80,7 +80,7 @@ class BackendController {
 
     public function updateProductForm($product, $files, $id) {
         $image = $files['image'];
-        $imageName = '';
+        $imageName = $product->old_image;
 
         if(isset($image) && !empty($image['tmp_name'])){
             $ext = explode('/', $image['type'])[1];

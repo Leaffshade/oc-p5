@@ -17,7 +17,6 @@ class BackendController {
     }
 
     public function home(){
-        
         echo $this->twig->render('admin/index.html.twig', []);
         die();
     }

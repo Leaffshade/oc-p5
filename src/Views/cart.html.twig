@@ -3,7 +3,6 @@
 {% block title %}Accueil{% endblock %}
 
 {% block content %}
-    <!--PRODUITS-->
 
     <h2>VOTRE PANIER</h2>
     <div class="ligneproduits">
@@ -12,7 +11,6 @@
         <div class="ligneright2"></div>
     </div>
 
-<!--IMAGES-->
         <table id="cart">
             <thead>
                 <tr>
@@ -31,11 +29,11 @@
      <form id="cart-form" method='post'>
             <div>
                 <label for='firstname'>Prénom</label>
-                <input id="firstname" placeholder="Prénom" name="firstname"/>
+                <input type="text" id="firstname" placeholder="Prénom" name="firstname"/>
             </div>
              <div>
                 <label for='lastname'>Nom</label>
-                <input id="lastname" placeholder="Nom" name="lastname" />
+                <input type="text" id="lastname" placeholder="Nom" name="lastname" />
             </div>
             <button type="submit">Commander</button>
         </form>

@@ -3,7 +3,6 @@
 {% block title %}Accueil{% endblock %}
 
 {% block content %}
-    <!--PRODUITS-->
 
     <h2>CONTACTEZ-NOUS</h2>
     <div class="ligneproduits">
@@ -12,17 +11,16 @@
         <div class="ligneright2"></div>
     </div>
 
-<!--IMAGES-->
     <div class="container">
    
         <form method="post" action="/contact">
             <div>
                 <label>Nom *:</label>
-                <input name="name" required/>
+                    <input type="text" name="name" required/>
             </div>
             <div>
                 <label>Email *:</label>
-                <input name="email" type="email" required/>
+                <input type="text" name="email" type="email" required/>
             </div>
             <div>
                 <label>Demande *:</label>
